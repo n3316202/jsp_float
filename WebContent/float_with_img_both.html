@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+		<style type="text/css">
+			body{
+				background-color:#ddd;				
+			}
+			/*현재까지는 부모가 더 작은 상태임*/
+			.box {
+				background-color: white;
+				overflow: hidden;
+			}
+			.left{
+				max-width: 300px;
+    			max-height: 300px;
+    			float:left;			
+			}
+			
+			.right{
+				max-width: 300px;
+    			max-height: 300px;
+    			float:right;			
+			}			
+			
+			.box p{
+				border:10px solid red;
+			}
+			/*
+				오른쪽으로 보내면 글자가 올라 가버림
+				의도는 내리는 거임
+				그때 쓰이는게 overflow hidden 임
+				
+				“만약 요소가 float된 자손 요소를 갖고 이 자손 요소의 하단 마진 경계(bottom margin-edge)가 
+				요소 박스 아래에 있으면 요소 박스의 높이는 자손 요소의 하단 마진 경계를 포함하도록 늘어난다.”
+			*/
+			 
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img class="left" src="puppy.jpg">
+			<img class="right" src="puppy.jpg">
+		</div>
+					wow!!
+	</body>
+</html>
